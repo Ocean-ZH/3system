@@ -1,0 +1,399 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;list-style:none;}
+*{
+    font-family: "Microsoft Yahei", "微软雅黑", "宋体";
+}
+a{
+    text-decoration: none;
+}
+
+/* 通用类 */
+.clearboth::after{
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    clear:both;
+}
+.page-center{
+    width:62.5%;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+.fl-l{
+    float: left;
+}
+.fl-r{
+    float: right;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background-color: #eee;
+    border: 1px solid #999;
+}
+.superRed{
+    color:red;
+    vertical-align: super;
+    font-weight:bold;
+}
+
+/*PC样式*/
+@media screen and (min-width:1025px){
+   /*总站的顶部栏*/
+    .top-nav-bg{
+        width: 100%;
+        min-width: 1100px;
+        height: 100px;
+        background-color: rgba(0,0,0,0.65);
+        position:fixed;
+        top: 0;
+        left: 0;
+        z-index:99;
+    }
+    .top-nav{
+        position:relative;
+    }
+    .top-nav ul.TN-m{
+        display:none;
+    }
+    .top-nav ul{
+        width:43%;
+        min-width:400px;
+    }
+    .top-nav ul li{
+        width: 50%;
+        height:100px;
+        line-height: 100px;
+        margin:0 auto;
+    }
+    .top-nav a{
+        text-decoration: none;
+        color:#fff;  
+        transition:font-size .2s;
+        font-size:14px;
+    }
+    .top-nav a:hover{
+        color:#fff;
+        font-size:16px;
+        padding-bottom:10px;
+        border-bottom: 2px solid #FFF;
+    }
+    .top-nav ul li.current a{
+        padding-bottom:10px;
+        font-size:16px;
+        border-bottom: 2px solid #FFF;
+    }
+    .top-nav .TN-tel{
+        display:none;
+    }
+    .top-nav .TN-3lines{
+        display:none;
+    }
+    .top-nav .TN-l{
+        float: left;
+        text-align: center;
+    }
+    .top-nav .TN-l li{
+        float: right;
+    }
+    .top-nav .TN-r{
+        float: right;
+        text-align: center;
+    }
+    .top-nav .TN-r li{
+        float: left;
+    }
+    #top-nav-bg .logo-box{
+        width: 250px;
+        height: 100px;
+        position:absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+           -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+             -o-transform: translateX(-50%);
+                transform: translateX(-50%);
+        background:url('../images/Top-Nav-logo.png') no-repeat center center;
+        box-sizing: border-box;
+        cursor:pointer;
+    }
+    #top-nav-bg .logo-box a img{
+        display:none;
+    }
+    #top-nav-bg .logo-box a{
+        display:inline-block;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* Banner盒子 */
+    .banner-box-540{
+        width: 100%;
+        height: 540px;
+        background: #000 url('../images/list/banner01.jpg') no-repeat center center;
+        background-size:cover;
+    }
+
+    /* 底部栏 */
+    .footer{
+        width: 100%;
+        height: 320px;
+        background-color: #f6f6f6;
+        overflow:hidden;
+        position:relative;
+        background:  url('../images/footer-bg1.gif') center center no-repeat;
+        background-size:cover;
+    }
+    .footer-l-box{
+        width: 50%;
+        height: 100%;
+    }
+    .footer .footer-left{
+        padding-left: 60px;
+        margin-top: 50px;
+        text-align: left;
+        float: right;
+        margin-right: 150px;
+    }
+    .footer-left h4{
+        color:#e92816;
+        font-size:14px;
+        font-weight:normal;
+        margin-bottom: 15px;
+    }
+    .footer-left ul{
+        width: 100%;
+        display:block;
+    }
+    .footer-left ul::after{
+        content:"";
+        display: block;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        clear:both;   
+    }
+    .footer-left ul li{
+        float: left;
+        margin-right: 20px;
+        padding:5px 0;
+    }
+    .footer-left ul li:hover a{
+        color:#e92816;
+    }
+    .footer-left ul li:nth-last-of-type(1){
+        margin: 0;
+    }
+    .footer-left ul li:nth-of-type(7),.footer-left ul li:nth-of-type(8),.footer-left ul li:nth-of-type(13),.footer-left ul li:nth-of-type(14)，.footer-left ul li:nth-of-type(7){
+        display:block;
+        clear:both;
+    }
+    .footer-left ul li:nth-of-type(8){
+        display:block;
+        clear:both;
+    }
+    .footer-left ul li a{
+        font-size:12px;
+        color:#666;
+    }
+    .footer-logo{
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -37px;
+        margin-top: -65px;
+    }
+    .footer-r-box{
+        position:absolute;
+        right: 100px;
+        top: 50%;
+        transform:translate(0, -50%);
+        -ms-transform:translate(0, -50%);
+        text-align: left;
+    }
+    .footer-r-box h4{
+        color:#e92816;
+        font-size:14px;
+        font-weight:normal;
+        margin-bottom: 15px;
+    }
+    .footer-r-box p{
+        color:#464646;
+        font-size:12px;
+    }
+    .footer-r-box img{
+        width: 120px;
+        height:auto;
+    }
+
+    .copyright{
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        background-color: #e92816;
+        font-size:12px;
+        color:#FFF;
+        text-align: center;
+    }
+    .copyright img{
+        width: 12px;
+        height:auto;
+        line-height: 44px;
+    }
+}/*@media>1024*/
+
+
+/*手机样式*/
+@media screen and (max-width: 1025px){
+    .page-center{
+        box-sizing:border-box;
+    }
+
+    /* 顶部栏 */
+     .top-nav-bg{
+        width: 100%;
+        min-width:initial;
+        height: 60px;
+        background-color: rgba(0,0,0,.65);
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index:99;
+        transition:none;
+    }
+    .top-nav{
+        position:relative;
+        width: 100%;
+        height: 100%;
+        overflow:hidden;
+    }
+    .top-nav ul.TN-m{
+        position:initial;
+        display:block;
+    }
+    .top-nav ul{
+        display:none;
+        width:initial;
+        min-width:initial;
+        position:absolute;
+        top: 90px;
+        left:0;
+        width: 100%;
+        box-sizing: border-box;
+        padding:0 40px;
+    }
+    .top-nav ul li{
+        width: 100%;
+        height:50px;
+        line-height: 50px;
+        border-bottom: 1px solid #666;
+    }
+    .top-nav a{
+        text-decoration: none;
+        transition:none;
+        color:#fff;
+        font-size:14px;
+        width: 100%;
+        display:inline-block;
+    }
+    .top-nav a:hover{
+        color:#fff;
+        font-size:14px;
+        padding-bottom:0;
+        border-bottom: none;
+    }
+    .top-nav ul li.current a{
+        padding-bottom:0;
+        font-size:14px;
+        border-bottom: none;
+    }
+    .top-nav .TN-tel{
+       display:block;
+        width:20px;
+        height:auto;
+        position:absolute;
+        right:20px;
+        top: 20px;
+    }
+    .top-nav .TN-3lines{
+        display:block;
+        width: 20px;
+        height:auto;
+        position:absolute;
+        left: 20px;
+        top: 24px;
+    }
+    .top-nav .TN-l{
+        float: initial;
+        position:initial;
+        display:block;
+        text-align: left;
+        margin-top: 90px;
+    }
+    .top-nav .TN-l li{
+        float: initial;
+    }
+    .top-nav .TN-r{
+        float: initial;
+        position:initial;
+        display:block;
+        text-align: left;
+    }
+    .top-nav .TN-r li{
+        float: initial;
+    }
+    #top-nav-bg .logo-box{
+        width: auto;
+        height: 50px;
+        position:absolute;
+        top: 5px;
+        left: 50%;
+        transform:translateX(-50%);
+        /* background:url('../images/Top-Nav-logo.png') no-repeat center center; */
+        box-sizing: border-box;
+        cursor:pointer;
+    }
+    #top-nav-bg .logo-box a img{
+        width: auto;
+        height: 50px;
+    }
+    #top-nav-bg .logo-box a{
+        display:inline-block;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* Banner盒子 */
+    .banner-box-540{
+        width: 100%;
+        height: 540px;
+        background: #000 url('../images/list/banner01.jpg') no-repeat center center;
+        background-size:cover;
+    }
+
+    /* 底部栏 */
+    .footer{
+        display:none;
+    }
+
+    .copyright{
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        background-color: #e92816;
+        font-size:12px;
+        color:#FFF;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .copyright img{
+        width: 12px;
+        height:auto;
+        line-height: 24px;
+        transform:translateY(2px);
+    }
+}/*@media<1024*/
