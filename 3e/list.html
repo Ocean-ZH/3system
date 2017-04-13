@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>文章列表</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
+</head>
+<body >
+    <div class="top-nav-bg clearboth " id="top-nav-bg">
+        <div class="top-nav page-center clearboth">
+            <ul class="TN-l">
+               <li ><a href="index.html" class="current">首页</a></li>
+               <li class="current"><a href="list.html">华标有话说</a></li>
+               <li ><a href="list.html">电商那些事儿</a></li>
+           </ul>
+           <div class="logo-box">
+                <a href="index.html" style="display:block;width: 100%; height: 100%;"></a>
+           </div>
+           <ul class="TN-r">
+                <li><a href="index.html#page2" id="top-nav-EBcase">电商案例</a></li>
+                <li><a href="index.html#page3" id="top-nav-ProductCenter">产品中心</a></li>
+                <li><a href="index.html#page10" id="top-nav-ContactUs">联系我们</a></li>                
+           </ul>
+           <a href="tel:07563311299"><img src="images/TN-tel-icon.png" alt="" width="20" class="TN-tel"/></a>
+           <img src="images/TN-3lines.png" alt="" class="TN-3lines"/>
+        </div>
+        <img class="top-qr" src="images/qr-code.jpg"  alt="" id="top-qr"/>
+        <div class="top-qr-big"></div>
+    </div>
+    <script type="text/javascript">
+        var winW=document.documentElement.clientWidth;
+        if(winW<1024){
+            $('.banner-box-540').css({'background':'#000 url('../images/list/bg1-m.jpg') no-repeat center center;'});
+        }else{
+            $('.banner-box-540').css({'background':'#000 url('[!--class.classimg--]') no-repeat center center;'});
+        }
+    </script>
+    <div class="banner-box-540">
+    </div>
+    
+    <div class="main-box clearboth">
+        <div class="list-btn">
+            <a href="javascript:void(null)" class="current">最热</a>
+            <a href="javascript:void(null)">最新</a>
+        </div>
+        <ul class="clearboth current">
+            <li>
+                <dl>
+                    <dt><a href="article.html"><img src="images/list/dt05.jpg" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="article.html">最热Papa开讲本期视点-【未来企业的链化生存】</a></h3>
+                            <div class="list-up-btn">
+                                <a href="javascript:void(null)"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <img src="images/list/views.gif" alt="" />
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>所谓链化生存：即你要么制定链规则、要么入链成为节点中的一环、要么入链成为节点环的某个神经元、要么岀局！背景 : 1、各行业产能过剩、环境压力倒逼政策出台：供给侧改革；2、人口红利消失、新新人类不愿从事传统蓝领岗位、人工成本连续多年增长导致已无成本...</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="#"><img src="images/list/dt01.gif" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="#">那些年苹果做错的设计</a></h3>
+                            <div class="list-up-btn">
+                                <a href="javascript:void(null)"><img src="images/list/share.gif" alt="" /></a>
+                                <img src="images/list/views.gif" alt="" />
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>iOS从07年第一代iPhone发布时的iPhone OS，已发展到今天的iOS10。这些年来，iOS从最初的一个简单、粗糙的ROM，发展成现在手机ROM中体验标杆的操作系统。设计风格走过了拟物化，扁平化，今年已发布的iOS10，设计风格也开始偏向卡片式风格，随着...</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="#"><img src="images/list/dt02.gif" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="#">多端统一，内容至上</a></h3>
+                            <div class="list-up-btn">
+                                <a href="javascript:void(null)"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <a href="#"><img src="images/list/views.gif" alt="" /></a>
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>两端的体验对齐需要解决很多矛盾。想要将WEB端的体验与移动端统一，并没有想象中的那么简单。听起来好像只要把交互框架和视觉风格直接照搬过来就好了。但实际上要对齐的是两种使用场景的体验，这中间要调和的是小屏幕和大屏幕的矛盾，触摸操作和键鼠操作的矛盾</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="#"><img src="images/list/dt03.gif" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="#">少了“套路”,大选民调也失灵</a></h3>
+                            <div class="list-up-btn">
+                                <a href="javascript:void(null)"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <a href="#"><img src="images/list/views.gif" alt="" /></a>
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>Five Thirty Eight是最看好特朗普的主流机构，他们认为特朗普的胜率约为29%。PEC的 Sam Wang 立下赌约：如果特朗普能够赢得240张以上的选举人票，他就吃虫子。结果就不多说了，我现在只想问Sam Wang 老师虫子口感怎么样...</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="#"><img src="images/list/dt04.gif" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="#">多做1%，带视障者玩转电商世界</a></h3>
+                            <div class="list-up-btn">
+                                <a href="#"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <a href="#"><img src="images/list/views.gif" alt="" /></a>
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>为提升视障者使用京东APP的购物体验，京东商城UER团队于2016年5月针对若干视障者进行了深入访谈。<br />我们发现，他们最大的渴望就是像普通人一样在电商世界里顺畅的浏览、愉快的闲逛以及寻找最优价格。唯一的不同是，这一切需要他们借助读屏软件来实现。然而</p>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+        <ul class="clearboth">
+            <li>
+                <dl>
+                    <dt><a href="article.html"><img src="images/list/dt05.jpg" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="article.html">最新Papa开讲本期视点-【未来企业的链化生存】</a></h3>
+                            <div class="list-up-btn">
+                                <a href="#"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <img src="images/list/views.gif" alt="" />
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>所谓链化生存：即你要么制定链规则、要么入链成为节点中的一环、要么入链成为节点环的某个神经元、要么岀局！背景 : 1、各行业产能过剩、环境压力倒逼政策出台：供给侧改革；2、人口红利消失、新新人类不愿从事传统蓝领岗位、人工成本连续多年增长导致已无成本...</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="#"><img src="images/list/dt01.gif" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="#">那些年苹果做错的设计</a></h3>
+                            <div class="list-up-btn">
+                                <a href="#"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <img src="images/list/views.gif" alt="" />
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>iOS从07年第一代iPhone发布时的iPhone OS，已发展到今天的iOS10。这些年来，iOS从最初的一个简单、粗糙的ROM，发展成现在手机ROM中体验标杆的操作系统。设计风格走过了拟物化，扁平化，今年已发布的iOS10，设计风格也开始偏向卡片式风格，随着...</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="#"><img src="images/list/dt02.gif" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="#">多端统一，内容至上</a></h3>
+                            <div class="list-up-btn">
+                                <a href="#"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <a href="#"><img src="images/list/views.gif" alt="" /></a>
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>两端的体验对齐需要解决很多矛盾。想要将WEB端的体验与移动端统一，并没有想象中的那么简单。听起来好像只要把交互框架和视觉风格直接照搬过来就好了。但实际上要对齐的是两种使用场景的体验，这中间要调和的是小屏幕和大屏幕的矛盾，触摸操作和键鼠操作的矛盾</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="#"><img src="images/list/dt03.gif" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="#">少了“套路”,大选民调也失灵</a></h3>
+                            <div class="list-up-btn">
+                                <a href="#"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <a href="#"><img src="images/list/views.gif" alt="" /></a>
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>Five Thirty Eight是最看好特朗普的主流机构，他们认为特朗普的胜率约为29%。PEC的 Sam Wang 立下赌约：如果特朗普能够赢得240张以上的选举人票，他就吃虫子。结果就不多说了，我现在只想问Sam Wang 老师虫子口感怎么样...</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="#"><img src="images/list/dt04.gif" alt="" /></a></dt>
+                    <dd>
+                        <div class="list-up">
+                            <h3><a href="#">多做1%，带视障者玩转电商世界</a></h3>
+                            <div class="list-up-btn">
+                                <a href="#"><img src="images/list/share.gif" alt="" /></a>
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                </div>
+                                <a href="#"><img src="images/list/views.gif" alt="" /></a>
+                                <span>1020</span>
+                            </div>
+                        </div>
+                        <p>为提升视障者使用京东APP的购物体验，京东商城UER团队于2016年5月针对若干视障者进行了深入访谈。<br />我们发现，他们最大的渴望就是像普通人一样在电商世界里顺畅的浏览、愉快的闲逛以及寻找最优价格。唯一的不同是，这一切需要他们借助读屏软件来实现。然而</p>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="read-more" style="display:none;">查看更多&gt;&gt;</div>
+        <div class="listpage"></div>
+    </div><!-- main box -->
+
+    <!-- footer Start -->
+    <div class="footer">
+        <div class="footer-l-box">
+            <div class="footer-left clearboth">
+                <h4>友情链接</h4>
+                <ul>
+                    <li><a href="#">罗西尼表业</a></li>
+                    <li><a href="#">华美化工建材</a></li>
+                    <li><a href="#">润丰机电</a></li>
+                    <li><a href="#">盛威电子</a></li>
+                    <li><a href="#">深华消防</a></li>
+                    <li><a href="#">深证智慧建设</a></li>
+                    <li><a href="#">旭日陶瓷(白兔瓷砖)</a></li>
+                    <li><a href="#">Cartridge World</a></li>
+                    <li><a href="#">cartidge top.com</a></li>
+                    <li><a href="#">北美耗材网</a></li>
+                    <li><a href="#">新意范智能建造</a></li>
+                    <li><a href="#">友元办公联盟</a></li>
+                    <li><a href="#">河南金爵智能科技</a></li>
+                    <li><a href="#">河南力之星</a></li>
+                    <li><a href="#">珠海广金厨具</a></li>
+                    <li><a href="#">福东饮食</a></li>
+                    <li><a href="#">华为云</a></li>
+                    <li><a href="#">阿里云</a></li>
+                    <li><a href="#">腾讯</a></li>
+                    <li><a href="#">百度</a></li>
+                    <li><a href="#">新浪</a></li>
+                    <li><a href="#">搜狐</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <img class="footer-logo" src="images/p10-footer-logo.jpg" alt="" />
+        <div class="footer-r-box">
+            <h4>关注@华标</h4>
+            <p>关注华标获得最新资讯</p>
+            <img src="images/footer-qrcode.jpg" alt="" />
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <img src="images/copyright.png" alt="" /> 华标软件 2011 - 2017 All Rights Reserved</p>
+    </div>
+    <!-- footer End -->
+
+    <!-- 百度分享按钮 -->
+    <script>
+        window._bd_share_config={
+            "common":{
+                "bdSnsKey":{},
+                "bdText":"",
+                "bdMini":"2",
+                "bdMiniList":false,
+                "bdPic":"",
+                "bdStyle":"1",
+                "bdSize":"24"
+            },
+            "share":{}
+        };
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</body>
+</html>
